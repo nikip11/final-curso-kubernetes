@@ -11,13 +11,8 @@ Crear una infraestructura cons docker y kubernetes para desplegar un proyecto ba
 - phpMyAdmin
 
 ### php
-
-
 ## Permisos azure
 
-az aks update -n {nombre-cluster} -g {grupo-recursos} --attach-acr {nombre-registry}
 az aks update -n led-dev03 -g led-dev03 --attach-acr leddev03
-
-docker
-
-docker pull leddev03.azurecr.io/symfony-base:latest
+docker pull leddev03.azurecr.io/final-curso-php:1.0
+docker pull leddev03.azurecr.io/final-curso-nginx:1.0
